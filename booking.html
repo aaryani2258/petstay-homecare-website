@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PetStay Home Care — Slot Booking</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/booking.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div id="loader" class="loader"><div class="spinner"></div></div>
+
+  <header class="navbar sticky">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">PetStay Home Care</a>
+      <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="booking.html" class="active">Slot Booking</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="announcement-bar" role="status" aria-live="polite">
+    <div class="announcement-track">
+      <span>PetStay Home Care — Monday to Saturday 9:00 AM to 6:00 PM • Sunday Closed • Book Your Pet's Slot Today</span>
+      <span>PetStay Home Care — Monday to Saturday 9:00 AM to 6:00 PM • Sunday Closed • Book Your Pet's Slot Today</span>
+    </div>
+  </div>
+
+  <main class="section">
+    <div class="container">
+      <div class="section-title reveal">
+        <span>Slot Booking</span>
+        <h2>Book Your Pet's Stay</h2>
+      </div>
+
+      <div class="info-card reveal" style="margin-bottom:22px;">
+        <p><strong>Available Days</strong> Monday — Saturday</p>
+        <p><strong>Working Hours</strong> 9:00 AM — 6:00 PM</p>
+        <p><strong>Closed</strong> Sunday</p>
+      </div>
+
+      <form id="bookingForm" class="form-grid reveal" novalidate>
+        <input type="text" name="ownerName" placeholder="Owner Name" required />
+        <input type="tel" name="phoneNumber" placeholder="Phone Number" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="text" name="petName" placeholder="Pet Name" required />
+
+        <select name="petType" required>
+          <option value="">Pet Type</option>
+          <option>Dog</option>
+          <option>Cat</option>
+          <option>Others</option>
+        </select>
+
+        <input type="text" name="petAge" placeholder="Pet Age" required />
+
+        <select name="petSize" required>
+          <option value="">Pet Size</option>
+          <option>Small</option>
+          <option>Medium</option>
+          <option>Large</option>
+        </select>
+
+        <input type="date" id="bookingDate" name="bookingDate" required />
+
+        <select id="timeSlot" name="timeSlot" required>
+          <option value="">Select date first</option>
+        </select>
+
+        <textarea name="specialInstructions" rows="4" placeholder="Special Instructions"></textarea>
+        <button type="submit" class="btn btn-primary full">Submit Booking</button>
+      </form>
+
+      <div id="bookingMessage" class="message" aria-live="polite"></div>
+    </div>
+
+    <div id="successPopup" class="popup" aria-hidden="true">
+      <div class="popup-box">
+        <h3>Your slot has been booked successfully!</h3>
+        <p style="margin:10px 0 18px;">We've saved your booking details temporarily.</p>
+        <button class="btn btn-primary" id="closePopup">Okay</button>
+      </div>
+    </div>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>PetStay Home Care</h3>
+        <p>Safe home-style care for your beloved pets.</p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div>
+        <h4>Follow</h4>
+        <p>Instagram • Facebook • YouTube</p>
+      </div>
+    </div>
+    <p class="copyright">© 2026 PetStay Home Care. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/calendar.js"></script>
+  <script src="js/booking.js"></script>
+</body>
+</html>

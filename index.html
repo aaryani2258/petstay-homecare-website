@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PetStay Home Care — Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div id="loader" class="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">PetStay Home Care</a>
+      <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="nav-menu" id="navMenu" aria-label="Main navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="booking.html">Slot Booking</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="announcement-bar" role="status" aria-live="polite">
+    <div class="announcement-track">
+      <span>PetStay Home Care — Open Mon–Sat 9:00 AM–6:00 PM • Sunday closed • Book your pet's slot today</span>
+      <span>PetStay Home Care — Open Mon–Sat 9:00 AM–6:00 PM • Sunday closed • Book your pet's slot today</span>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <span class="badge">Warm • Safe • Loving</span>
+          <h1>A Safe, Loving Home Away From Home for Your Pets</h1>
+          <p>Trusted pet home day care with gentle supervision, daily walks, healthy feeding, and regular updates.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="booking.html">Book a Slot</a>
+            <a class="btn btn-secondary" href="services.html">Explore Services</a>
+          </div>
+        </div>
+
+        <div class="hero-image reveal">
+          <img src="images/hero.jpg"
+               alt="Happy pets at daycare"
+               onerror="this.src='https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=1200&q=80'"/>
+        </div>
+      </div>
+    </section>
+
+    <section class="section highlight">
+      <div class="container">
+        <div class="section-title reveal">
+          <span>Our Main Highlight</span>
+          <h2>Pet Home Day Care</h2>
+        </div>
+
+        <div class="feature-grid">
+          <div class="feature-card reveal">Safe Environment</div>
+          <div class="feature-card reveal">Daily Walks</div>
+          <div class="feature-card reveal">Healthy Food</div>
+          <div class="feature-card reveal">Play Time</div>
+          <div class="feature-card reveal">24/7 Care</div>
+          <div class="feature-card reveal">Regular Updates</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery-section">
+      <div class="container">
+        <div class="section-title reveal">
+          <span>Happy Moments</span>
+          <h2>Pet Gallery</h2>
+        </div>
+
+        <div class="gallery-grid">
+          <img class="gallery-item reveal" src="images/gallery1.jpg" alt="Pet 1" onerror="this.src='https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80'"/>
+          <img class="gallery-item reveal" src="images/gallery2.jpg" alt="Pet 2" onerror="this.src='https://images.unsplash.com/photo-1516750105099-4b7d9c3f4f3f?auto=format&fit=crop&w=800&q=80'"/>
+          <img class="gallery-item reveal" src="images/gallery3.jpg" alt="Pet 3" onerror="this.src='https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?auto=format&fit=crop&w=800&q=80'"/>
+          <img class="gallery-item reveal" src="images/gallery4.jpg" alt="Pet 4" onerror="this.src='https://images.unsplash.com/photo-1507149833265-60c372daea22?auto=format&fit=crop&w=800&q=80'"/>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials">
+      <div class="container">
+        <div class="section-title reveal">
+          <span>Reviews</span>
+          <h2>What Pet Parents Say</h2>
+        </div>
+
+        <div class="card-grid three">
+          <div class="info-card reveal">“Amazing care and constant updates. My dog loved it!”<h4>A Happy Parent</h4></div>
+          <div class="info-card reveal">“Clean, safe, and very friendly staff. Highly recommended.”<h4>Pet Owner</h4></div>
+          <div class="info-card reveal">“The best daycare for my puppy. Great experience.”<h4>Satisfied Client</h4></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq">
+      <div class="container">
+        <div class="section-title reveal">
+          <span>Helps</span>
+          <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item reveal"><summary>What pets do you accept?</summary><p>Dogs, cats, and other small companion pets.</p></details>
+          <details class="faq-item reveal"><summary>Are bookings available on Sunday?</summary><p>No, we are closed on Sunday.</p></details>
+          <details class="faq-item reveal"><summary>How do I book a slot?</summary><p>Use the Slot Booking page and choose a date and time.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>PetStay Home Care</h3>
+        <p>Safe home-style care for your beloved pets.</p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="booking.html">Booking</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div>
+        <h4>Follow</h4>
+        <p>Instagram • Facebook • YouTube</p>
+      </div>
+    </div>
+    <p class="copyright">© 2026 PetStay Home Care. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/calendar.js"></script>
+  <script src="js/booking.js"></script>
+</body>
+</html>

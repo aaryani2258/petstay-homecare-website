@@ -1,0 +1,16 @@
+@media (max-width:900px){
+  .hero-grid,.contact-grid,.about-grid{grid-template-columns:1fr}
+  .nav-menu{position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;align-items:flex-start;padding:16px;display:none;border-top:1px solid #eef3f7;box-shadow:0 12px 28px rgba(0,0,0,.08);z-index:999}
+  .nav-menu.show{display:flex}
+  .menu-toggle{display:block}
+  .form-grid{grid-template-columns:1fr}
+}
+
+@media (max-width:600px){
+  .section{padding:70px 0}
+  .hero h1{font-size:2.1rem}
+  .btn{width:100%}
+  .hero-actions{flex-direction:column}
+  .section-title h2{font-size:1.6rem}
+  .announcement-track{font-size:.9rem}
+}
